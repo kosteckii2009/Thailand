@@ -1,0 +1,276 @@
+body{
+    margin: 0%;
+    background-color: white;
+    font-family:  "Ubuntu", sans-serif;;
+}
+header,footer{
+    width: 98%;
+    background-color: #86AFFF;
+    display: flex;
+    padding: 1%;
+    position: relative;
+    margin: 0;
+}
+header img{
+    width: 12%;
+}
+header h1{
+    position: absolute;
+    left: 15%;
+}
+header p{
+    position: absolute;
+    left: 15%;
+    top:45%;
+    font-size: larger;
+}
+nav{
+    position: relative;
+    left: 35%;
+    bottom:20%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 60%;
+}
+nav a{
+    text-decoration: none;
+    padding:1% ;
+    color: black;
+    background-color: #BAC9E7;
+    margin-top: 6%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+main h1{
+    margin: 2% 0 2% 0.5%;
+    text-align: left;
+    position: relative;
+}
+div {
+    position: relative;
+display: flex;
+padding: 2%;
+}
+ol{
+    margin: 2% 0 2% 2%;
+    font-size: 25px;
+}
+.p1{
+    margin: 2%;
+}
+.ol2{
+    margin-left: 0.5%;
+}
+.div2 img{
+    width: 200%;
+   
+}
+.div2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.img3{
+    position: absolute;
+    left: 63.2%;
+    top:9.5%;
+    height: 73%;
+}
+.img2{
+    position: relative;
+}
+.po53{
+    width: 100%;
+    display: flex;
+}
+.img4{
+    width:35% ;
+}
+.img5{
+    width:15% 
+    
+}
+.img6{
+    width:15%  
+}
+.po58{
+    display: flex; 
+}
+.gal{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    border: 5px blue solid;
+    justify-content: center;
+}
+.gal img{
+    width: 30%;
+    opacity: 0.2;
+}
+.gal img:hover{
+    transform: scale(1.3);
+    opacity: 1;
+    border: 5px blue solid;
+    transition: 1s;
+}
+.gal img:hover~.gal{
+    border: none;
+}
+.map{
+    width: 50%;
+    margin:5% 25%;
+}
+.m1{
+
+    width: 6%;
+    position: absolute;
+    top: 48%;
+    left: 32%;
+    z-index: 6;
+}
+.m1:hover, .m2:hover , .m3:hover , .m4:hover , .m5:hover , .m6:hover , .m7:hover{
+    transform: scale(5);
+    opacity: 1;
+    transition: 1s;
+}
+.m2{
+
+    width: 7%;
+    position: absolute;
+    top: 58%;
+    left: 31%;
+    z-index: 6;
+}
+.m3{
+
+    width: 5%;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    z-index: 6;
+}
+.m4{
+
+    width: 5%;
+    position: absolute;
+    top: 68%;
+    left: 36%;
+    z-index: 6;
+}
+.m5{
+
+    width: 5%;
+    position: absolute;
+    top: 73%;
+    left: 38%;
+    z-index: 6;
+}
+.m6{
+
+    width: 5%;
+    position: absolute;
+    top: 85%;
+    left: 34%;
+    z-index: 6;
+}
+.m7{
+
+    width: 7%;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    z-index: 6;
+}
+#bg-wrap{
+    position: absolute;
+    width: 100%;
+   
+    right:  0%;
+    top: -3%;
+    padding: 0;
+    height: 105%;
+    z-index: -1;
+}
+main{
+    position: relative;
+    margin: 0;
+}
+div{
+    display: flex;
+    justify-content: space-evenly;
+}
+div p{
+    width: 80%;
+}
+.his3p{
+width: 80%;
+margin-left: 10%;
+}
+img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+h1{
+    text-shadow: rgb(243, 243, 243) 0px 1px 2px, rgb(228, 207, 207) 0px 2px 4px, 
+    rgba(214, 203, 203, 0.952) 0px 4px 8px, rgba(233, 218, 218, 0.973) 0px 8px 16px, rgba(236, 218, 218, 0.938) 0px 16px 32px,
+     rgba(212, 202, 202, 0.979) 0px 32px 64px;
+}
+
+.glow-on-hover {
+
+    position: relative;
+    z-index: 0;
+    border: 3px solid black;
+    cursor: pointer;
+    
+   
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #BAC9E7;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #BAC9E7;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
